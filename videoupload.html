@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Uploader</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0%;
+            font-family: 'poppins' sans-serif;
+            box-sizing: border-box;   
+        }
+        a{
+            text-decoration: none;
+            color: #5a5a5a;
+        }
+        img{
+            cursor: pointer;
+            size: 0cap;
+        }
+
+.flex_div{
+    display:flex;
+    align-items : center;
+}
+nav{
+    padding: 10px 2%;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0,0,0 ,0.2);
+    background-color: #fff;
+    position: sticky;
+    top: auto;
+    z-index: 10;
+}
+.nav_right img{
+    width: 25px;
+    margin-right: 25px;
+}
+.nav_right .icon{
+    width: 35px;
+    margin-right:0;
+    border-radius: 50%;
+}
+.nav_left .left_menu{
+    width: 22px;
+    margin-right: 25px;
+}
+.nav_left a img{
+    width: 60px;
+    margin-right: 5px;
+    align-items:baseline;
+    border-radius: 5px;
+}
+.nav_left a{
+    display: flex;
+    margin-left: 2px;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    width: 40px;
+}
+
+.nav_middle .mic_icon{
+    width: 15px;
+}
+.nav_middle .search_box{
+    border: 1px solid #ccc;
+    margin-right: 15px;
+    padding: 8px 12px;
+    border-radius: 25px;
+}
+.nav_middle .search_box input{
+    width: 400px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+.nav_middle .search_box img{
+    width: 15px;
+}
+/*-------------uper part finish here-----------------*/
+        h1 {
+            color: #333;
+        }
+
+        #videoContainer {
+            margin-bottom: 20px;
+            background-color: #f3e9ef;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+            align-items: center;
+        }
+
+        #videoContainer:hover {
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        #videoInput {
+            display: none;
+            flex-wrap: wrap;
+            float: left;
+        }
+
+        label {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 15px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            float: left;
+            margin-right: 15px;
+            margin-top: 60px;
+        }
+
+        label:hover {
+            background-color: #0056b3;
+        }
+
+        #uploadedVideo {
+            max-width: 100%;
+            border-radius: 5px;
+            
+        }
+    </style>
+</head>
+<body>
+    <nav class="flex_div">
+        <div class="nav_left flex_div">
+            <img src="images/menu.png" class="left_menu">
+            <a href=""><img src="images/logo.png"><p>BlackTube</p></a>
+        </div>
+        
+        <div class="nav_middle flex_div">
+            <div class="search_box flex_div">
+                <input type="text" placeholder="Search">
+                <img src="images/search.png" >
+            </div>  
+            <img src="images/voice-search.png"class="mic_icon">              
+        </div>
+        
+        <div class="nav_right flex_div">
+            <img src="images/upload.png">
+            <img src="images/more.png">
+            <img src="images/notification.png">
+            <img src="images/motivation.jpeg" class="icon">
+        </div>
+    </nav>
+    
+    <div id="videoContainer">
+        <label for="videoInput">Upload Video</label>
+        <input type="file" id="videoInput" accept="video/*">
+        <br>
+        <video id="uploadedVideo" controls></video>
+    </div>
+
+    <script>
+        document.getElementById('videoInput').addEventListener('change', function() {
+            const video = document.getElementById('uploadedVideo');
+            const file = this.files[0];
+
+            if (file && file.type.includes('video')) {
+                const reader = new FileReader();
+
+                reader.onload = function(e) {
+                    video.src = e.target.result;
+                }
+
+                reader.readAsDataURL(file);
+            } else {
+                alert('Please select a valid video file.');
+            }
+        });
+    </script>
+</body>
+</html>

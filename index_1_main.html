@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Tube Clone</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- -----------------Upper part of our you tube------------------ -->
+
+
+    <nav class="flex_div">
+        <div class="nav_left flex_div">
+            <img src="images/menu.png" class="left_menu">
+            <a href=""><img src="images/logo.png"><p>BlackTube</p></a>
+        </div>
+        
+        <div class="nav_middle flex_div">
+            <div class="search_box flex_div">
+                <input type="text" placeholder="Search">
+                <img src="images/search.png" >
+            </div>  
+            <img src="images/voice-search.png" class="mic_icon" alt="Click me" onclick="showAlert()">             
+        </div>
+        
+        <div class="nav_right flex_div">
+            <a href="videoupload.html"><img src="images/upload.png"></a>
+            <a href=""><img src="images/more.png"></a>
+            <a href="#" onclick="shownotification()"><img src="images/notification.png" ></a>
+            <a href="notivational_thoughts.html"><img src="images/motivation.jpeg" class="icon"></a>
+        </div>
+    </nav>
+
+
+    <!-- ----------Side bar upper part Starts here---------- -->
+
+    <div class="sidebar">
+        <div class="shortcuts">
+            <a href="#" id="refreshlink"><img src="images/home.png"><p>Home</p></a>
+            <a href="explore.html" id="exploreLink"><img src="images/explore.png"><p>Explore</p></a>
+            <a href="subscription.html" id="subscriptionLink"><img src="images/subscriprion.png"><p>Subscription</p></a>
+            <a href="library.html" id="libraryLink"><img src="images/library.png"><p>Library</p></a>
+            <a href="history.html" id="historyLink"><img src="images/history.png"><p>History</p></a>
+            <a href="playlist.html" id="playListLink"><img src="images/playlist.png"><p>Playlist</p></a>
+            <a href=""><img src="images/messages.png"><p>Messages</p></a>
+            <hr>
+        </div>
+
+
+    <!-- -------------Sidebar lower part starts here------- -->
+    <div class="subscribed_list">
+        <h3>SUBSRIBED CHANNEL</h3>
+        <a href="notivational_thoughts.html"><img src="images/motivation.jpeg"><p>Motivational Thoughts</p></a>
+        <a href="newcars.html"><img src="images/car.png"><p>New Cars</p></a>
+        <a href="movieclip.html"><img src="images/movie.png"><p>Movie Clips</p></a>
+        <a href="tarakmehta.html"><img src="images/tarakmehta.png"><p>Tarak Mehta</p></a>
+        <a href="codeflix.html"><img src="images/codeflix.png"><p>CodeFlix</p></a>
+    </div>
+    </div>
+
+
+    <!-- --------main container-------------------- -->
+
+
+
+<div class="container">
+    <div class="banner">
+        <img src="images/welcome4.webp">
+    </div>
+
+    <div class="list_container">
+             <!-- -------------For  First  video----------- -->
+            <div class="list_vid">
+            <a href="index_2.html"><img src="images/thumbnail1.jpeg" class="thumbnail"></a> <!-- -------at here after cliking on video a tag do work on next page------ -->
+                <div class="flex_div">
+                    <img src="images/tarakmehta.png">
+                    <div class="vid_info">
+                        <a href="index_2.html">Jethalal and Bapuji comedy video</a>
+                        <p>Tarak Mehta</p>
+                        <p>101k views &bull; 5 days</p>
+                    </div>
+                </div>
+            </div>
+            
+        
+            <!-- -------------For  Second  video----------- -->
+            <div class="list_vid">
+                <a href="index_3.html"><img src="images/thumbnail2.jpeg" class="thumbnail"></a>
+                    <div class="flex_div">
+                        <img src="images/motivation.jpeg">
+                        <div class="vid_info">
+                            <a href="">Loss or win!!Doesn't matter....</a>
+                            <p>Motivational Thoughts</p>
+                            <p>1k views &bull;  10 days</p>
+                        </div>
+                    </div>
+            </div>
+
+            <!-- -------------For  Third  video----------- -->
+            <div class="list_vid">
+                <a href="index_4.html"><img src="images/thumbnail3.jpeg" class="thumbnail"></a>
+                    <div class="flex_div">
+                        <img src="images/movie.png">
+                        <div class="vid_info">
+                            <a href="">Horror clip capture</a>
+                            <p>Movie Clips</p>
+                            <p>1m views &bull; 65 days</p>
+                        </div>
+                    </div>
+            </div>
+
+            <!-- -------------For  Fourth  video----------- -->
+            <div class="list_vid">
+                <a href="index_5.html"><img src="images/thumbnail4.jpeg" class="thumbnail"></a>
+                    <div class="flex_div">
+                        <img src="images/movie.png">
+                        <div class="vid_info">
+                            <a href="">Real black magic exist...!!</a>
+                            <p>Movie Clips</p>
+                            <p>1k views &bull; 5 days</p>
+                        </div>
+                    </div>
+            </div>
+
+            <!-- -------------For  Fifth  video----------- -->
+            <div class="list_vid">
+                <a href="index_6.html"><img src="images/thumbnail5.jpeg" class="thumbnail"></a>
+                    <div class="flex_div">
+                        <img src="images/codeflix.png">
+                        <div class="vid_info">
+                            <a href="">How to type fast in your coding journy</a>
+                            <p>codeflix</p>
+                            <p>1k views &bull; 5 days</p>
+                        </div>
+                    </div>
+            </div>
+
+            <!-- -------------For  Sixth  video----------- -->
+            <div class="list_vid">
+                <a href="index_7.html"><img src="images/thumbnail6.jpeg" class="thumbnail"></a>
+                    <div class="flex_div">
+                        <img src="images/car.png">
+                        <div class="vid_info">
+                            <a href="">Porcse new model....look crazyy!!!!</a>
+                            <p>New Cars</p>
+                            <p>1k views &bull; 5 days</p>
+                        </div>
+                    </div>
+            </div>
+
+            <!-- -------------For  Seventh  video----------- -->
+            <div class="list_vid">
+                <a href="index_8.html"><img src="images/thumbnail7.png" class="thumbnail"></a>
+                    <div class="flex_div">
+                        <img src="images/motivation.jpeg">
+                        <div class="vid_info">
+                            <a href="">How to build Your own House</a>
+                            <p>Motivational Thoughts</p>
+                            <p>1k views &bull; 5 days</p>
+                        </div>
+                    </div>
+            </div>
+
+            <!-- -------------For  Eighth  video----------- -->
+            <div class="list_vid">
+                <a href="index_9.html"><img src="images/thumbnail8.jpeg" class="thumbnail"></a>
+                    <div class="flex_div">
+                        <img src="images/car.png">
+                        <div class="vid_info">
+                            <a href="">BMD on road experiance!!! with 130 km/h speed...</a>
+                            <p>New Cars</p>
+                            <p>1k views &bull; 5 days</p>
+                        </div>
+                    </div>
+            </div>
+            <!-- -------------For  Ninth  video----------- -->
+            <div class="list_vid">
+                <a href="index_10.html"><img src="images/thumbnail9.jpeg" class="thumbnail"></a>
+                    <div class="flex_div">
+                        <img src="images/movie.png">
+                        <div class="vid_info">
+                            <a href="">Iron man...In Avengers : age of ultron..</a>
+                            <p>Movie Clips</p>
+                            <p>1k views &bull; 5 days</p>
+                        </div>
+                    </div>
+            </div>
+            <!-- -------------For  Tenth  video----------- -->
+            <div class="list_vid">
+                <a href="index_11.html"><img src="images/thumbnail10.jpeg" class="thumbnail"></a>
+                    <div class="flex_div">
+                        <img src="images/codeflix.png">
+                        <div class="vid_info">
+                            <a href="">How to improve your coding skills???</a>
+                            <p>codeflix</p>
+                            <p>1k views &bull; 5 days</p>
+                        </div>
+                    </div>
+            </div>
+            <!-- -------------For  Eleventh  video----------- -->
+            <div class="list_vid">
+                <a href="index_12.html"><img src="images/thumbnail11.jpeg" class="thumbnail"></a>
+                    <div class="flex_div">
+                        <img src="images/movie.png">
+                        <div class="vid_info">
+                            <a href="">Joker movie best part</a>
+                            <p>Movie Clips</p>
+                            <p>1k views &bull; 5 days</p>
+                        </div>
+                    </div>
+            </div>
+            <!-- -------------For  Twelth  video----------- -->
+            <div class="list_vid">
+                <a href="index_13.html"><img src="images/thumbnail12.jpeg" class="thumbnail"></a>
+                    <div class="flex_div">
+                        <img src="images/tarakmehta.png">
+                        <div class="vid_info">
+                            <a href="">bhootni episod in tarak mehta ka oolta chasma</a>
+                            <p>Tarak Mehta</p>
+                            <p>1k views &bull; 5 days</p>
+                        </div>
+                    </div>
+            </div>
+    
+    
+    
+
+    </div>
+
+</div>
+
+
+    <!-- --------------- javascript add here--------------- -->
+    <script src="script.js"></script>
+</body>
+</html>

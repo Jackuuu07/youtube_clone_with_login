@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo and Videos Page</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0%;
+            font-family: 'poppins' sans-serif;
+            box-sizing: border-box;   
+        }
+        a{
+            text-decoration: none;
+            color: #5a5a5a;
+        }
+        img{
+            cursor: pointer;
+            size: 0cap;
+        }
+         /* ------------------navigation bar starts here-------------- */
+        
+        
+        .flex_div{
+            display:flex;
+            align-items : center;
+        }
+        nav{
+            padding: 10px 2%;
+            justify-content: space-between;
+            box-shadow: 0 0 10px rgba(0,0,0 ,0.2);
+            background-color: #fff;
+            position: sticky;
+            top: auto;
+            z-index: 10;
+        }
+        .nav_right img{
+            width: 25px;
+            margin-right: 25px;
+        }
+        .nav_right .icon{
+            width: 35px;
+            margin-right:0;
+            border-radius: 50%;
+        }
+        .nav_left .left_menu{
+            width: 22px;
+            margin-right: 25px;
+        }
+        .nav_left a img{
+            width: 60px;
+            margin-right: 5px;
+            align-items:baseline;
+            border-radius: 5px;
+        }
+        .nav_left a{
+            display: flex;
+            margin-left: 2px;
+            align-items: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: x-large;
+            font-weight: bold;
+            width: 40px;
+        }
+        
+        .nav_middle .mic_icon{
+            width: 15px;
+        }
+        .nav_middle .search_box{
+            border: 1px solid #ccc;
+            margin-right: 15px;
+            padding: 8px 12px;
+            border-radius: 25px;
+        }
+        .nav_middle .search_box input{
+            width: 400px;
+            border: 0;
+            outline: 0;
+            background: transparent;
+        }
+        .nav_middle .search_box img{
+            width: 15px;
+        }
+        
+        /*----------nav bar finish here--------------*/
+        body{
+            background-color: rgb(149, 189, 48);
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .logo img {
+            max-width: 100px;
+            height: auto;
+            border-radius: 60%;
+        }
+        .logo p{
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+        }
+
+        .video-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .video {
+            width: 400px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .video img {
+            width:400px ;
+            height: auto;
+        }
+
+        .video-info {
+            padding: 10px;
+        }
+
+        .video-title {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .video-description {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <nav class="flex_div">
+        <div class="nav_left flex_div">
+            <img src="images/menu.png" class="left_menu">
+            <a href=""><img src="images/logo.png"><p>BlackTube</p></a>
+        </div>
+        
+        <div class="nav_middle flex_div">
+            <div class="search_box flex_div">
+                <input type="text" placeholder="Search">
+                <img src="images/search.png" >
+            </div>  
+            <img src="images/voice-search.png" class="mic_icon" alt="Click me" onclick="showAlert()">             
+        </div>
+        
+        <div class="nav_right flex_div">
+            <a href="videoupload.html"><img src="images/upload.png"></a>
+            <a href=""><img src="images/more.png"></a>
+            <a href="#" onclick="shownotification()"><img src="images/notification.png" ></a>
+            <img src="images/motivation.jpeg" class="icon">
+        </div>
+    </nav>
+
+    <!-- -------------------main container starts here------------ -->
+
+    <div class="logo">
+        <img src="images/tarakmehta.png" alt="Logo">
+        <p>CHANNEL : Tarak Mehta</p>
+        <p>SUBSCRIBERS : 1M</p>
+        <p>VIEWS : 1,80,64,948</p>
+    </div>
+
+    <div class="video-list">
+        <div class="video">
+            <img src="images/thumbnail1.jpeg" alt="Video 1">
+            <div class="video-info">
+                <div class="video-title">Jethalal and Bapuji comedy video</div>
+                <div class="video-description">Tarak Mehta</div>
+            </div>
+        </div>
+        <div class="video">
+            <img src="images/thumbnail12.jpeg" alt="Video 2">
+            <div class="video-info">
+                <div class="video-title">bhootni episod in tarak mehta ka oolta chasma</div>
+                <div class="video-description">Tarak Mehta</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

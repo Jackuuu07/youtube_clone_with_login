@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Channel Playlist Page</title>
+    <style>
+        body {
+            font-family:'poppins' sans-serif;
+            background-color: rgb(87, 197, 157);
+            padding: 20px;
+            width: 1000px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .channel-list {
+            display: flex;
+            gap: 40px;
+        }
+
+        .channel {
+            width: 600px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .channel img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .channel-info {
+            padding: 10px;
+        }
+
+        .channel-title {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .video-list {
+            display: none;
+        }
+
+        .video-list.active {
+            display: block;
+        }
+
+        .video {
+            max-width: 300px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .video img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .video-info {
+            padding: 10px;
+        }
+
+        .video-title {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .video-description {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+    <script>
+        function toggleVideoList(channelId) {
+            var videoList = document.getElementById(channelId + '-videos');
+            videoList.classList.toggle('active');
+        }
+    </script>
+</head>
+<body>
+
+    <h1>PLAYLIST OF ALL CHANNEL</h1>
+    <hr>
+    <div class="channel-list">
+        <div class="channel" onclick="toggleVideoList('channel1')">
+            <img src="images/tarakmehta.png" alt="Channel 1">
+            <div class="channel-info">
+                <div class="channel-title">CHANNEL 1</div>
+            </div>
+        </div>
+
+        <div class="channel" onclick="toggleVideoList('channel2')">
+            <img src="images/car.png" alt="Channel 2">
+            <div class="channel-info">
+                <div class="channel-title">CHANNEL 2</div>
+            </div>
+        </div>
+
+        <div class="channel" onclick="toggleVideoList('channel3')">
+            <img src="images/movie.png" alt="Channel 3">
+            <div class="channel-info">
+                <div class="channel-title">CHANNEL 3</div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="channel1-videos" class="video-list">
+        <div class="video">
+            <img src="images/thumbnail1.jpeg" alt="Channel 1 Video 1">
+            <div class="video-info">
+                <div class="video-title">Jethalal and Bapuji comedy video</div>
+                <div class="video-description">Tarak Mehta</div>
+            </div>
+        </div>
+        <br>
+        <div class="video">
+            <img src="images/thumbnail12.jpeg" alt="Channel 1 Video 2">
+            <div class="video-info">
+                <div class="video-title">bhootni episod in tarak mehta ka oolta chasma</div>
+                <div class="video-description">Tarak Mehta</div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="channel2-videos" class="video-list">
+        <div class="video">
+            <img src="images/thumbnail6.jpeg" alt="Channel 2 Video 1">
+            <div class="video-info">
+                <div class="video-title">Porcse new model....look crazyy!!!!</div>
+                <div class="video-description">New Cars</div>
+            </div>
+        </div>
+        <br>
+        <div class="video">
+            <img src="images/thumbnail8.png" alt="Channel 2 Video 2">
+            <div class="video-info">
+                <div class="video-title">Yellow Lamborgini is just.....!!!</div>
+                <div class="video-description">New Cars</div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="channel3-videos" class="video-list">
+        <div class="video">
+            <img src="images/hor4.png" alt="Channel 3 Video 1">
+            <div class="video-info">
+                <div class="video-title">Eat movie's Joker gatup is dangerous</div>
+                <div class="video-description">Movie Clips</div>
+            </div>
+        </div>
+        <br>
+        <div class="video">
+            <img src="images/thumbnail4.jpeg" alt="Channel 3 Video 2">
+            <div class="video-info">
+                <div class="video-title">Real black magic exist...!!</div>
+                <div class="video-description">Movie Clips</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
